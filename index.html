@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-note {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 999px;
+            background-color: #f5ddd3;
+            color: #7b4f46;
+            font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 70%;
+            height: 3px;
+            background-color: #d6b89a;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-shell">
+        <header class="top-banner">
+            <p class="eyebrow">Personal Portfolio</p>
+            <h1>Your Name</h1>
+            <p class="designation" style="font-style: italic; color: #4b5d67;">Student | Front-End Learner | Creative Thinker</p>
+        </header>
+
+        <main>
+            <section class="hero-card">
+                <div class="profile-wrap">
+                    <img src="assets/profile.png" alt="Profile photo" class="profile-photo">
+                </div>
+                <div class="hero-text">
+                    <span class="hero-note">Simple and Professional</span>
+                    <h2>Hello, I am building my future through design and technology.</h2>
+                    <p>
+                        I enjoy creating clean web pages that are easy to use, visually balanced, and simple to explain.
+                        My goal is to keep learning, improve my skills every day, and turn ideas into useful digital work.
+                    </p>
+                    <p>
+                        I believe good design should feel calm, organized, and clear. That is why I prefer soft colors,
+                        readable text, and layouts that look professional without becoming too complex.
+                    </p>
+                </div>
+            </section>
+
+            <section class="info-grid">
+                <div class="info-card">
+                    <h3 class="section-title">Hobbies</h3>
+                    <p>Reading about technology, listening to music, sketching layout ideas, and exploring new websites for inspiration.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="section-title">Passion</h3>
+                    <p>I am passionate about web design, learning modern tools, and building interfaces that look neat and feel intuitive.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="section-title">Past Work</h3>
+                    <p>I have practiced simple academic projects such as portfolio pages, landing pages, and small front-end assignments.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="section-title">Social Life</h3>
+                    <p>I value teamwork, respectful communication, and spending time with friends while sharing ideas and learning together.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-bar">
+            <p>Connect with me and follow my work online.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+                <a href="https://www.linkedin.com/in/your-profile/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="https://github.com/" target="_blank" rel="noreferrer" style="background-color: #d9ebe4;">GitHub</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
