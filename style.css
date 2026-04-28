@@ -150,6 +150,95 @@ body {
     color: #47565f;
 }
 
+.dom-section {
+    background-color: rgba(255, 250, 246, 0.9);
+    border: 1px solid var(--border-soft);
+    border-radius: 26px;
+    box-shadow: var(--shadow-soft);
+    padding: 28px;
+    margin-bottom: 28px;
+}
+
+.dom-header {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.dom-header h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin: 14px 0 8px;
+}
+
+.dom-header p {
+    color: var(--text-soft);
+}
+
+.dom-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.dom-card {
+    background-color: #fffdfb;
+    border: 1px solid var(--border-soft);
+    border-radius: 22px;
+    padding: 22px;
+    box-shadow: 0 12px 28px rgba(76, 92, 102, 0.08);
+}
+
+.dom-card-wide {
+    grid-column: 1 / -1;
+}
+
+.dom-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.dom-card p {
+    color: #4f5d65;
+    margin-bottom: 14px;
+}
+
+.task-list {
+    padding-left: 22px;
+    color: #4f5d65;
+    margin-bottom: 16px;
+}
+
+.task-list li {
+    margin-bottom: 8px;
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.action-btn {
+    border: none;
+    border-radius: 999px;
+    padding: 10px 16px;
+    background-color: #e7f1ec;
+    color: var(--text-main);
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.92;
+}
+
+.action-btn-alt {
+    background-color: #f6e3da;
+}
+
 .footer-bar {
     text-align: center;
     background-color: rgba(255, 250, 246, 0.88);
@@ -193,7 +282,8 @@ body {
         text-align: center;
     }
 
-    .info-grid {
+    .info-grid,
+    .dom-grid {
         grid-template-columns: 1fr;
     }
 }

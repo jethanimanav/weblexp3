@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Portfolio</title>
+    <title>Portfolio and DOM Practical</title>
     <link rel="stylesheet" href="style.css">
     <style>
         .hero-note {
@@ -34,13 +34,18 @@
             background-color: #d6b89a;
             border-radius: 20px;
         }
+
+        .dom-label {
+            background-color: #e8f0ea;
+            color: #426255;
+        }
     </style>
 </head>
 <body>
     <div class="page-shell">
         <header class="top-banner">
             <p class="eyebrow">Personal Portfolio</p>
-            <h1>Your Name</h1>
+            <h1>My Portfolio</h1>
             <p class="designation" style="font-style: italic; color: #4b5d67;">Student | Front-End Learner | Creative Thinker</p>
         </header>
 
@@ -84,6 +89,44 @@
                     <p>I value teamwork, respectful communication, and spending time with friends while sharing ideas and learning together.</p>
                 </div>
             </section>
+
+            <section class="dom-section">
+                <div class="dom-header">
+                    <span class="hero-note dom-label">Practical No. 2</span>
+                    <h2>Simple DOM Manipulation Tasks</h2>
+                    <p>This section uses small JavaScript examples on the same portfolio page.</p>
+                </div>
+
+                <div class="dom-grid">
+                    <div class="dom-card">
+                        <h3 class="section-title">1. Change Paragraph Text</h3>
+                        <p id="messageText">This is the original paragraph text.</p>
+                        <button id="changeTextBtn" class="action-btn" style="background-color: #f6ded5;">Change Text</button>
+                    </div>
+
+                    <div class="dom-card">
+                        <h3 class="section-title">2. Dynamic List</h3>
+                        <ul id="taskList" class="task-list">
+                            <li>Portfolio page created</li>
+                        </ul>
+                        <div class="button-row">
+                            <button id="addItemBtn" class="action-btn">Add New Item</button>
+                            <button id="removeItemBtn" class="action-btn action-btn-alt">Remove Last Item</button>
+                        </div>
+                    </div>
+
+                    <div class="dom-card dom-card-wide">
+                        <h3 class="section-title">3. Change Background Color</h3>
+                        <p>Click any button to change the page background color.</p>
+                        <div class="button-row">
+                            <button class="action-btn color-btn" data-color="#f6f1eb">Default</button>
+                            <button class="action-btn color-btn" data-color="#f9efe5">Peach</button>
+                            <button class="action-btn color-btn" data-color="#edf5ef">Mint</button>
+                            <button class="action-btn color-btn" data-color="#eef3fb">Blue</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer class="footer-bar">
@@ -95,5 +138,6 @@
             </div>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
